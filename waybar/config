@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "top",
     "reload_style_on_change": true,
-    "modules-left": ["clock","battery","custom/spotify", "tray"],
+    "modules-left": ["clock","custom/spotify", "tray"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["cpu","memory","network"],
+    "modules-right": ["cpu","memory","network", "custom/notifaction"],
 
 
     "hyprland/workspaces": {
@@ -17,12 +17,6 @@
         "persistent-workspaces": {
             "*": [ 1,2,3,4,5,6]
         }
-    },
-    "custom/notification": {
-        "tooltip": false,
-        "format": "",
-        "on-click": "swaync-client -t -sw",
-        "escape": true
     },
     "clock": {
         "format": " {:%I:%M:%S %p} ",
@@ -67,43 +61,6 @@
         "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
         "on-click-right": "blueman-manager",
     }, 
-    "battery": {
-        "interval":30,
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󰂄 ",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "󰁻",
-        "󰁼",
-        "󰁾",
-        "󰂀",
-        "󰂂",
-        "󰁹"
-        ]
-    },
-    "custom/pacman": {
-        "format": "󰅢 {}",
-        "interval": 30,   
-        "exec": "checkupdates | wc -l",
-        "exec-if": "exit 0",
-        "on-click": "kitty sh -c 'yay -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
-        "signal": 8,
-        "tooltip": false
-    },
-    "custom/expand": {
-        "format": "",
-        "tooltip": false
-    },
-    "custom/endpoint":{
-        "format": "|",
-        "tooltip": false
-    },
     "group/expand": {
         "orientation": "horizontal",
         "drawer": {
@@ -138,6 +95,10 @@
     },
     "separator": {
         "format": "|"
+    },
+    "custom/notifaction": {
+        "format": "?",
+        "on-click": "swaync-client -t"
     }
 } 
 

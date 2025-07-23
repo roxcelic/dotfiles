@@ -1,0 +1,18 @@
+/* border colors */
+@define-color mainBorderTL @color2;
+@define-color mainBorderBR @color3;
+@define-color mainBorderInactive @color4;
+
+/* text colors */
+@define-color color1 rgba(255,255,255,1);
+@define-color color2 rgba(255,0,200,1);
+@define-color color3 rgba(77,0,54,1);
+@define-color color4 rgba(87,87,87,1);
+@define-color color5 rgba(255,255,255,1);
+@define-color error rgba(255,0,0,1);
+@define-color success rgba(0,255,0,1);
+@define-color special rgba(0,0,0,1);
+
+/* basics */
+@define-color white rgba(255,255,255,1);
+@define-color black rgba(0,0,0,1);
