@@ -14,23 +14,26 @@ im not sure where in this requires the photos but i use 2 directorys for importa
 - ~/Pictures/sys/pfp.png
 
 # preview
-<img src="./preview/1.png">
-
 <table>
-  <tr>
-    <td>
-        <table>
-            <tr>
-                <td><img src="./preview/2.png"></td>
-                <td><img src="./preview/3.png"></td>
-            </tr>
-            <tr>
-                <td><img src="./preview/4.png"></td>
-                <td><img src="./preview/5.png"></td>
-            </tr>
-        </table>
-    </td>
-  </tr>
+    <tr>
+        <td>
+            <img src="./preview/1.png">
+        <td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td><img src="./preview/2.png"></td>
+                    <td><img src="./preview/3.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="./preview/4.png"></td>
+                    <td><img src="./preview/5.png"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>
 
 # software
