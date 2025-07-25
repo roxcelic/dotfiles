@@ -35,7 +35,7 @@ window {
     padding: 20px;
     border-bottom: solid 1.5px @black;
     color: @white;
-    border-radius:10;
+    border-radius:10px;
     background-color: alpha(@color3,.2);
 }
 #input image {
@@ -64,5 +64,5 @@ window {
 }
 
 #entry:drop(active) {
-    background-color: @color1 !important;
+    background-color: @color1;
 }

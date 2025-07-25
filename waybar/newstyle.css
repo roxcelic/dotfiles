@@ -5,14 +5,12 @@
 * {
     font-size:15px;
     font-family: "CodeNewRoman Nerd Font Propo";
-        /* font-family: "DepartureMono Nerd Font Propo"; */
 }
 
-    /* used for background styling, maybe ill do something fancy with this */
 window#waybar{
     all:unset;
     background-color: @mainBG;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 0px 0px 8px 8px;
 }
 
 /* modules */
@@ -47,7 +45,7 @@ window#waybar{
         transition: all .2s ease;
     }
     #workspaces button:hover {
-        color: @white;
+        color: @black;
         border: none;
         text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
         transition: all 1s ease;
@@ -69,13 +67,20 @@ window#waybar{
         transition: all 1s ease;
     }
     #workspaces button.empty.active {
-        color: @color1;
+        color: @color9;
         border: none;
         text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
     }
 
+    /* bluetooth */
+    #bluetooth{
+        padding: 0px 5px;
+        transition: all .3s ease;
+        color:@color1;
+    }
+
     /* system */
-    #cpu, #memory, #temperature, #network, #bluetooth{
+    #cpu,#memory,#temperature, #network{
         padding: 0px 5px;
         transition: all .3s ease; 
         color:@color1;
@@ -83,14 +88,21 @@ window#waybar{
 
     /* tray */
     #tray{
-        background-color: @color3;
+        padding: 0px 5px;
+        transition: all .3s ease; 
+        background-color: @special;
         border-radius: 10px;
     }
-
-    #tray, #tray menu *, #tray menu separator  {
+    #tray menu * {
         padding: 0px 5px;
         transition: all .3s ease; 
     }
+
+    #tray menu separator {
+        padding: 0px 5px;
+        transition: all .3s ease; 
+    }
+
 
     /* unsure what expand is */
     #group-expand{
@@ -111,8 +123,13 @@ window#waybar{
         background-color: pink;
     }
 
-    /* notifaction & theme*/
-    #custom-notifaction, #custom-theme {
+    /* color picker */
+    #custom-colorpicker{
+        padding: 0px 5px;
+    }
+
+    /* notifaction */
+    #custom-notifaction {
         padding: 0px 5px;
         color: @color1;
     }
@@ -136,21 +153,7 @@ window#waybar{
     }
 
 /* animations / on hover */
-#clock:hover,
- #custom-spotify:hover,
-  #custom-notifaction:hover,
-   #custom-pacman:hover,
-    #custom-notification:hover,
-     #bluetooth:hover,
-      #network:hover,
-       #battery:hover,
-        #cpu:hover,
-         #memory:hover,
-          #temperature:hover,
-           #custom-theme:hover
-            {
-    
-    /* actual styles, ik long header probably a better way of doing all that*/
+#clock:hover, #custom-spotify:hover, #custom-notifaction:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
     transition: all .3s ease;
     color: @color2;
     background-color: initial;

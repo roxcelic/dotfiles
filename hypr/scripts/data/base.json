@@ -1,0 +1,56 @@
+{
+    "config": {
+        "updateCommand": "echo succesful",
+        "wallpaper": "~/Pictures/sys/wallpaper.png"
+    },
+    "conf": {
+        "data": [
+            ["mainBorderTL", "$color2"],
+            ["mainBorderBR", "$color3"],
+            ["mainBorderInactive", "$color4"],
+            ["mainBorderAngle", "$45deg"],
+
+            ["active_opacity", "1.0"],
+            ["inactive_opacity", "0.75"],
+
+            ["wallpaper", "~/Pictures/sys/wallpaper.png"],
+            ["pfp", "$~/Pictures/sys/pfp.png"],
+
+            ["color1", "rgba(255,255,255,1)"],
+            ["color2", "rgba(255,0,200,1)"],
+            ["color3", "rgba(77,0,54,1)"],
+            ["color4", "rgba(87,87,87,1)"],
+            ["color5", "rgba(255,255,255,1)"],
+            ["error", "rgba(255,0,0,1)"],
+            ["success", "rgba(0,255,0,1)"],
+            ["special", "rgb(255, 0, 140)"],
+
+            ["white", "rgba(255,255,255,1)"],
+            ["black", "rgba(0,0,0,1)"]
+        ]
+    },
+    "css": {
+        "config": {
+            "def": "@define-color"
+        },
+        "data": [
+            ["mainBG", "alpha(@color3, 0.25)"],
+
+            ["mainBorderTL", "@color2"],
+            ["mainBorderBR", "@color3"],
+            ["mainBorderInactive", "@color4"],
+
+            ["color1", "rgba(255,255,255,1)"],
+            ["color2", "rgba(255,0,200,1)"],
+            ["color3", "rgba(77,0,54,1)"],
+            ["color4", "rgba(87,87,87,1)"],
+            ["color5", "rgba(255,255,255,1)"],
+            ["error", "rgba(255,0,0,1)"],
+            ["success", "rgba(0,255,0,1)"],
+            ["special", "rgb(255, 0, 140)"],
+
+            ["white", "rgba(255,255,255,1)"],
+            ["black", "rgba(0,0,0,1)"]
+        ]
+    }
+}
